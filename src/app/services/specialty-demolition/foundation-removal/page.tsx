@@ -1,0 +1,80 @@
+import { Metadata } from 'next'
+import { Phone, CheckCircle, Clock, Shield, DollarSign } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Foundation Removal Boise & Treasure Valley | Boise Demolition Pros',
+  description: 'Foundation excavation and removal services. Professional service in Boise, Meridian, Nampa & throughout the Treasure Valley. Call (208) 505-9352 for a free quote.',
+  alternates: {
+    canonical: 'https://boise-demolition.com/services/specialty-demolition/foundation-removal',
+  },
+}
+
+export default function FoundationRemovalPage() {
+  return (
+    <main className="pt-20">
+      <section className="py-16 bg-gradient-to-b from-dark-blue to-[#1a5a9e]">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Foundation Removal</h1>
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8">Foundation excavation and removal services.</p>
+          <a href="tel:2085059352" className="inline-flex items-center gap-2 bg-[#FFC845] text-dark-blue px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors">
+            <Phone className="w-5 h-5" />(208) 505-9352
+          </a>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="prose prose-lg max-w-none text-gray-600 mb-12">
+              <p>Most house demolitions include foundation removal—you need a clean lot to build on. We excavate and remove old foundations, including basement walls, footings, and slabs.</p>
+              <p>Foundation removal is heavy work that requires proper equipment. We have excavators and loaders capable of handling residential and light commercial foundations.</p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <CheckCircle className="w-10 h-10 text-[#FFC845] mb-4" />
+                <h3 className="text-xl font-bold text-dark-blue mb-3">Complete Service</h3>
+                <p className="text-gray-600">We handle permits, demolition, debris removal, and site cleanup. One crew, one point of contact.</p>
+              </div>
+
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <Shield className="w-10 h-10 text-[#FFC845] mb-4" />
+                <h3 className="text-xl font-bold text-dark-blue mb-3">Licensed & Insured</h3>
+                <p className="text-gray-600">Fully licensed demolition contractors with comprehensive insurance coverage for your protection.</p>
+              </div>
+
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <Clock className="w-10 h-10 text-[#FFC845] mb-4" />
+                <h3 className="text-xl font-bold text-dark-blue mb-3">Fast & Reliable</h3>
+                <p className="text-gray-600">We show up on time and complete projects efficiently. No delays, no excuses.</p>
+              </div>
+
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <DollarSign className="w-10 h-10 text-[#FFC845] mb-4" />
+                <h3 className="text-xl font-bold text-dark-blue mb-3">Transparent Pricing</h3>
+                <p className="text-gray-600">Free quotes with all costs included. No hidden fees or surprise charges.</p>
+              </div>
+            </div>
+
+            <div className="bg-blue-50 p-8 rounded-lg text-center">
+              <h2 className="text-2xl font-bold text-dark-blue mb-4">Get a Free Quote</h2>
+              <p className="text-gray-600 mb-6">Call us for a free, no-obligation quote on your foundation removal project.</p>
+              <a href="tel:2085059352" className="inline-flex items-center gap-2 bg-[#FFC845] text-dark-blue px-8 py-3 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors">
+                <Phone className="w-5 h-5" />(208) 505-9352
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 bg-gray-100">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-2xl font-bold text-dark-blue mb-4">Serving the Entire Treasure Valley</h2>
+            <p className="text-gray-600">Boise • Meridian • Nampa • Caldwell • Eagle • Garden City • Kuna • Star • Middleton • Mountain Home</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  )
+}
