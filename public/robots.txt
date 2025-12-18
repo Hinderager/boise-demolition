@@ -1,0 +1,14 @@
+# robots.txt for https://boise-demolition.com
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://boise-demolition.com/sitemap.xml
+
+# Crawl-delay (optional, be nice to crawlers)
+Crawl-delay: 1
+
+# Disallow admin and API routes
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
