@@ -21,7 +21,7 @@ const services = [
         { name: 'Interior Demolition', href: '/cities-served/mountain-home/interior-demolition', description: 'Interior gut-out and demolition for remodels' },
 ]
 
-export default function Mountain HomeDemolitionPage() {
+export default function MountainHomeDemolitionPage() {
   return (
     <main className="pt-20">
       <section className="py-16 bg-gradient-to-b from-dark-blue to-[#1a5a9e]">

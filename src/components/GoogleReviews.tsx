@@ -35,13 +35,13 @@ const staticReviews = [
     author: 'David B.',
     relative_time: '1 week ago',
     rating: 5,
-    text: 'Interior demo on a duplex we're renovating. They removed everything down to the studs, hauled all the debris, and stayed on schedule. Good crew, good price, good results.',
+    text: 'Interior demo on a duplex we are renovating. They removed everything down to the studs, hauled all the debris, and stayed on schedule. Good crew, good price, good results.',
   },
   {
     author: 'Amanda W.',
     relative_time: '3 months ago',
     rating: 5,
-    text: 'Needed a partial demo—just one wall and some flooring. They came in, removed exactly what we asked for, protected everything else, and cleaned up perfectly. Would hire again.',
+    text: 'Needed a partial demo - just one wall and some flooring. They came in, removed exactly what we asked for, protected everything else, and cleaned up perfectly. Would hire again.',
   },
   {
     author: 'Chris P.',

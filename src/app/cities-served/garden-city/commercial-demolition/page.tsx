@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   },
 }
 
-export default function Garden CityCommercialDemolitionPage() {
+export default function GardenCityCommercialDemolitionPage() {
   return (
     <main className="pt-20">
       <section className="py-16 bg-gradient-to-b from-dark-blue to-[#1a5a9e]">

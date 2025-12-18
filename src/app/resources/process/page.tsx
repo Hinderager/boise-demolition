@@ -3,7 +3,7 @@ import { Phone, ClipboardCheck, FileText, HardHat, Truck, Sparkles, CheckCircle 
 
 export const metadata: Metadata = {
   title: 'Our Demolition Process | Boise Demolition Pros',
-  description: 'Step-by-step guide to our demolition process. From initial consultation to final cleanup, here's what to expect when you hire Boise Demolition Pros.',
+  description: 'Step-by-step guide to our demolition process. From initial consultation to final cleanup, here is what to expect when you hire Boise Demolition Pros.',
   alternates: { canonical: 'https://boise-demolition.com/resources/process' },
 }
 

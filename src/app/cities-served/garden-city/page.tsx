@@ -21,7 +21,7 @@ const services = [
         { name: 'Interior Demolition', href: '/cities-served/garden-city/interior-demolition', description: 'Interior gut-out and demolition for remodels' },
 ]
 
-export default function Garden CityDemolitionPage() {
+export default function GardenCityDemolitionPage() {
   return (
     <main className="pt-20">
       <section className="py-16 bg-gradient-to-b from-dark-blue to-[#1a5a9e]">

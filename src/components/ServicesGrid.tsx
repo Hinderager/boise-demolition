@@ -24,7 +24,7 @@ const services = [
   {
     icon: Truck,
     title: 'Selective Demolition',
-    description: 'Remove only what needs to go. Perfect for renovations—we protect what stays and demo what doesn't.',
+    description: 'Remove only what needs to go. Perfect for renovations - we protect what stays and demo what does not.',
   },
 ]
 
