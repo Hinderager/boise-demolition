@@ -4,7 +4,7 @@ import { Phone, Home, Building2, Hammer, Wrench } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Demolition Services | Boise Demolition',
-  description: 'Complete demolition services in Boise and the Treasure Valley. Residential, commercial, interior, and specialty demolition. Call (208) 505-9352.',
+  description: 'Complete demolition services in Boise and the Treasure Valley. Residential, commercial, interior, and specialty demolition. Call (208) 943-5231.',
   alternates: { canonical: 'https://boise-demolition.com/services' },
 }
 
@@ -77,8 +77,8 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold text-white mb-4">Need Demolition Services?</h2>
           <p className="text-gray-200 mb-6">Call us for a free quote and consultation.</p>
-          <a href="tel:2085059352" className="inline-flex items-center gap-2 bg-[#FFC845] text-dark-blue px-8 py-3 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors">
-            <Phone className="w-5 h-5" />(208) 505-9352
+          <a href="tel:2089435231" className="inline-flex items-center gap-2 bg-[#FFC845] text-dark-blue px-8 py-3 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors">
+            <Phone className="w-5 h-5" />(208) 943-5231
           </a>
         </div>
       </section>

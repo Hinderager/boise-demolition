@@ -7,54 +7,10 @@ import { Star, ChevronLeft, ChevronRight } from 'lucide-react'
 
 // Static reviews for demolition services
 const staticReviews = [
-  {
-    author: 'Marcus T.',
-    relative_time: '2 weeks ago',
-    rating: 5,
-    text: 'Needed my garage torn down to make room for an addition. They showed up on time, had it demolished in a day, and hauled everything off. Site was cleaner than when they started. Really solid work.',
-  },
-  {
-    author: 'Jennifer M.',
-    relative_time: '1 month ago',
-    rating: 5,
-    text: 'Kitchen demo for our remodel. They gutted everything—cabinets, counters, flooring—and were super careful not to damage the walls we wanted to keep. My contractor said it was a perfect tearout.',
-  },
-  {
-    author: 'Ryan K.',
-    relative_time: '3 weeks ago',
-    rating: 5,
-    text: 'Had an old concrete patio that was cracked and uneven. They broke it up, loaded it all, and left the area graded and ready for new pavers. Quick job, fair price, no complaints.',
-  },
-  {
-    author: 'Sarah L.',
-    relative_time: '2 months ago',
-    rating: 5,
-    text: 'Called them for a shed demolition. It was rotting and leaning, but they handled it safely and cleaned up every scrap. Even raked the area when they were done. Really appreciated the attention to detail.',
-  },
-  {
-    author: 'David B.',
-    relative_time: '1 week ago',
-    rating: 5,
-    text: 'Interior demo on a duplex we are renovating. They removed everything down to the studs, hauled all the debris, and stayed on schedule. Good crew, good price, good results.',
-  },
-  {
-    author: 'Amanda W.',
-    relative_time: '3 months ago',
-    rating: 5,
-    text: 'Needed a partial demo - just one wall and some flooring. They came in, removed exactly what we asked for, protected everything else, and cleaned up perfectly. Would hire again.',
-  },
-  {
-    author: 'Chris P.',
-    relative_time: '2 weeks ago',
-    rating: 5,
-    text: 'Old deck was unsafe and needed to go. They tore it down, pulled the posts, filled the holes, and hauled it all away. Fast and professional. Exactly what I needed.',
-  },
-  {
-    author: 'Nicole R.',
-    relative_time: '1 month ago',
-    rating: 5,
-    text: 'Bathroom tearout before our remodel. They gutted it in half a day and left the space ready for the plumber. Clean work, no damage to surrounding areas. Very happy with how it went.',
-  },
+  { author: 'Rachelle Tridle', rating: 5, text: 'Top Shelf Junk Removers were awesome! They showed up on time, took everything that was quoted — plus a few extra items I had on site — with no hassle. Super fast, efficient, affordable, and even had change because I paid with cash!. Great service all around. Highly recommend!' },
+  { author: 'Jeff Rau', rating: 5, text: 'Exceptional service and response from Top Shelf. Cleaning out a family home and we were able to fill a 15 cubic yard dumpster twice! Both deliveries were very timely and working with Top Shelf staff was great! Thank you for helping make our chore easier and efficient. I would easily recommend this business to others.' },
+  { author: 'Katrina Vincent', rating: 5, text: 'We recently hired Top Shelf to assist a client who had been a long time tenant for the company I work for, it was a big project, riddled with challenges. They far exceeded my expectations. Not only did they arrive on time and get right to work, they treated our clients with kindness and respect. They were extremely helpful and hard working. They accommodated our needs for appointment times and seemed to really want to earn our business. I hope to be able to utilize their services again! Would very highly recommend.' },
+  { author: 'Kevin McSpadden', rating: 5, text: 'Eric and Gabe were great. Positive attitude and tackled the job without complaint Pricing was great and will definitely use them again!' },
 ]
 
 export function GoogleReviews() {
@@ -62,7 +18,7 @@ export function GoogleReviews() {
   const [expandedReviews, setExpandedReviews] = useState(false)
   const reviewsPerPage = 4
   const rating = 5.0
-  const totalReviews = 100
+  const totalReviews = 323
 
   const nextSlide = () => {
     setCurrentIndex((prev) =>
@@ -151,7 +107,6 @@ export function GoogleReviews() {
                           <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                         </svg>
                       </div>
-                      <p className="text-sm text-gray-500">{review.relative_time}</p>
                     </div>
                   </div>
 
@@ -225,9 +180,9 @@ export function GoogleReviews() {
         {/* CTA Buttons */}
         <div className="flex flex-row gap-4 justify-center mt-12">
           <Button asChild size="lg" className="bg-ub-yellow hover:bg-ub-yellow/90 text-black font-bold text-lg px-10 py-6 rounded-lg uppercase border-4 border-ub-yellow">
-            <a href="tel:2085059352">
+            <a href="tel:2089435231">
               <span className="md:hidden">Call Now</span>
-              <span className="hidden md:inline">(208) 505-9352</span>
+              <span className="hidden md:inline">(208) 943-5231</span>
             </a>
           </Button>
         </div>

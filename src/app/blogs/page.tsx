@@ -45,7 +45,7 @@ const blogPosts = [
 
 export default function BlogsPage() {
   return (
-    <main>
+    <main className="pt-20">
       {/* Hero Section */}
       <section className="relative h-[400px] flex items-center">
         <Image

@@ -5,7 +5,7 @@ import { Phone, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Specialty Demolition Services Treasure Valley | Boise Demolition Pros',
-  description: 'Specialized demolition services including pools, concrete, and foundations. Serving Boise, Meridian, Nampa & the Treasure Valley. Call (208) 505-9352.',
+  description: 'Specialized demolition services including pools, concrete, and foundations. Serving Boise, Meridian, Nampa & the Treasure Valley. Call (208) 943-5231.',
   alternates: {
     canonical: 'https://boise-demolition.com/services/specialty-demolition',
   },
@@ -24,8 +24,8 @@ export default function SpecialtyDemolitionPage() {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Specialty Demolition Services</h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8">Specialized demolition services including pools, concrete, and foundations.</p>
-          <a href="tel:2085059352" className="inline-flex items-center gap-2 bg-[#FFC845] text-dark-blue px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors">
-            <Phone className="w-5 h-5" />(208) 505-9352
+          <a href="tel:2089435231" className="inline-flex items-center gap-2 bg-[#FFC845] text-dark-blue px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors">
+            <Phone className="w-5 h-5" />(208) 943-5231
           </a>
         </div>
       </section>
@@ -53,8 +53,8 @@ export default function SpecialtyDemolitionPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Need Specialty Demolition Service?</h2>
           <p className="text-xl text-gray-300 mb-8">Call us for professional demolition services throughout the Treasure Valley.</p>
-          <a href="tel:2085059352" className="inline-flex items-center gap-2 bg-[#FFC845] text-dark-blue px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors">
-            <Phone className="w-5 h-5" />(208) 505-9352
+          <a href="tel:2089435231" className="inline-flex items-center gap-2 bg-[#FFC845] text-dark-blue px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors">
+            <Phone className="w-5 h-5" />(208) 943-5231
           </a>
         </div>
       </section>

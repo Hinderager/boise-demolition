@@ -3,7 +3,7 @@ import { Phone, CheckCircle, Clock, Shield, MapPin } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Commercial Demolition Meridian, ID | Boise Demolition Pros',
-  description: 'Commercial building demolition services in Meridian, Idaho. Licensed, insured, professional service. Call (208) 505-9352 for a free quote.',
+  description: 'Commercial building demolition services in Meridian, Idaho. Licensed, insured, professional service. Call (208) 943-5231 for a free quote.',
   alternates: {
     canonical: 'https://boise-demolition.com/cities-served/meridian/commercial-demolition',
   },
@@ -21,8 +21,8 @@ export default function MeridianCommercialDemolitionPage() {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 text-center">Commercial Demolition in Meridian</h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto text-center mb-8">Commercial building demolition services in Meridian, Idaho</p>
           <div className="text-center">
-            <a href="tel:2085059352" className="inline-flex items-center gap-2 bg-[#FFC845] text-dark-blue px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors">
-              <Phone className="w-5 h-5" />(208) 505-9352
+            <a href="tel:2089435231" className="inline-flex items-center gap-2 bg-[#FFC845] text-dark-blue px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors">
+              <Phone className="w-5 h-5" />(208) 943-5231
             </a>
           </div>
         </div>
@@ -64,8 +64,8 @@ export default function MeridianCommercialDemolitionPage() {
             <div className="bg-blue-50 p-8 rounded-lg text-center">
               <h2 className="text-2xl font-bold text-dark-blue mb-4">Get a Free Quote in Meridian</h2>
               <p className="text-gray-600 mb-6">Call us for a free, no-obligation quote on your commercial demolition project.</p>
-              <a href="tel:2085059352" className="inline-flex items-center gap-2 bg-[#FFC845] text-dark-blue px-8 py-3 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors">
-                <Phone className="w-5 h-5" />(208) 505-9352
+              <a href="tel:2089435231" className="inline-flex items-center gap-2 bg-[#FFC845] text-dark-blue px-8 py-3 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors">
+                <Phone className="w-5 h-5" />(208) 943-5231
               </a>
             </div>
           </div>

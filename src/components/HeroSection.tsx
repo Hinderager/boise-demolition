@@ -83,9 +83,9 @@ export function HeroSection({ city, headline, subheadline }: HeroSectionProps = 
             {/* Desktop CTA Buttons */}
             <div className="hidden md:flex flex-row gap-3 md:gap-4 mb-4 lg:mb-12 md:lg:mb-16 justify-center px-8 lg:px-0">
               <Button asChild size="lg" className="bg-[#FFC845] hover:bg-[#e5b13d] text-black font-bold text-lg md:text-2xl lg:text-2xl px-3 md:px-10 lg:px-8 lg:px-10 py-5 md:py-8 lg:py-6 lg:py-8 rounded-lg uppercase flex-1 lg:flex-1 sm:w-48 border-4 border-[#FFC845]">
-                <a href="tel:2085059352">
+                <a href="tel:2089435231">
                   <span className="md:hidden">Call Now</span>
-                  <span className="hidden md:inline">(208) 505-9352</span>
+                  <span className="hidden md:inline">(208) 943-5231</span>
                 </a>
               </Button>
             </div>

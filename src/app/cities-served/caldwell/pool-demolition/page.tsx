@@ -3,7 +3,7 @@ import { Phone, CheckCircle, Clock, Shield, MapPin } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Pool Demolition Caldwell, ID | Boise Demolition Pros',
-  description: 'In-ground and above-ground pool removal in Caldwell, Idaho. Licensed, insured, professional service. Call (208) 505-9352 for a free quote.',
+  description: 'In-ground and above-ground pool removal in Caldwell, Idaho. Licensed, insured, professional service. Call (208) 943-5231 for a free quote.',
   alternates: {
     canonical: 'https://boise-demolition.com/cities-served/caldwell/pool-demolition',
   },
@@ -21,8 +21,8 @@ export default function CaldwellPoolDemolitionPage() {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 text-center">Pool Demolition in Caldwell</h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto text-center mb-8">In-ground and above-ground pool removal in Caldwell, Idaho</p>
           <div className="text-center">
-            <a href="tel:2085059352" className="inline-flex items-center gap-2 bg-[#FFC845] text-dark-blue px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors">
-              <Phone className="w-5 h-5" />(208) 505-9352
+            <a href="tel:2089435231" className="inline-flex items-center gap-2 bg-[#FFC845] text-dark-blue px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors">
+              <Phone className="w-5 h-5" />(208) 943-5231
             </a>
           </div>
         </div>
@@ -64,8 +64,8 @@ export default function CaldwellPoolDemolitionPage() {
             <div className="bg-blue-50 p-8 rounded-lg text-center">
               <h2 className="text-2xl font-bold text-dark-blue mb-4">Get a Free Quote in Caldwell</h2>
               <p className="text-gray-600 mb-6">Call us for a free, no-obligation quote on your pool demolition project.</p>
-              <a href="tel:2085059352" className="inline-flex items-center gap-2 bg-[#FFC845] text-dark-blue px-8 py-3 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors">
-                <Phone className="w-5 h-5" />(208) 505-9352
+              <a href="tel:2089435231" className="inline-flex items-center gap-2 bg-[#FFC845] text-dark-blue px-8 py-3 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors">
+                <Phone className="w-5 h-5" />(208) 943-5231
               </a>
             </div>
           </div>

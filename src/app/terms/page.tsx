@@ -107,7 +107,7 @@ export default function TermsPage() {
             </p>
             <ul>
               <li><strong>Phone:</strong> (208) 361-1982</li>
-              <li><strong>Email:</strong> info@boise-demolition.com</li>
+              <li><strong>Email:</strong> info@topshelfpros.com</li>
             </ul>
           </div>
 

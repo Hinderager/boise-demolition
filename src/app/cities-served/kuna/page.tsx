@@ -4,7 +4,7 @@ import { Phone, ArrowRight, MapPin } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Demolition Services Kuna, ID | Boise Demolition Pros',
-  description: 'Professional demolition services in Kuna, Idaho. House demo, garage removal, commercial demolition & more. Licensed & insured. Call (208) 505-9352.',
+  description: 'Professional demolition services in Kuna, Idaho. House demo, garage removal, commercial demolition & more. Licensed & insured. Call (208) 943-5231.',
   alternates: {
     canonical: 'https://boise-demolition.com/cities-served/kuna',
   },
@@ -33,8 +33,8 @@ export default function KunaDemolitionPage() {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 text-center">Demolition Services in Kuna</h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto text-center mb-8">Professional demolition services in Kuna, Idaho</p>
           <div className="text-center">
-            <a href="tel:2085059352" className="inline-flex items-center gap-2 bg-[#FFC845] text-dark-blue px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors">
-              <Phone className="w-5 h-5" />(208) 505-9352
+            <a href="tel:2089435231" className="inline-flex items-center gap-2 bg-[#FFC845] text-dark-blue px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors">
+              <Phone className="w-5 h-5" />(208) 943-5231
             </a>
           </div>
         </div>
@@ -95,8 +95,8 @@ export default function KunaDemolitionPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to Get Started in Kuna?</h2>
           <p className="text-xl text-gray-300 mb-8">Call us for a free quote on your demolition project.</p>
-          <a href="tel:2085059352" className="inline-flex items-center gap-2 bg-[#FFC845] text-dark-blue px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors">
-            <Phone className="w-5 h-5" />(208) 505-9352
+          <a href="tel:2089435231" className="inline-flex items-center gap-2 bg-[#FFC845] text-dark-blue px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors">
+            <Phone className="w-5 h-5" />(208) 943-5231
           </a>
         </div>
       </section>

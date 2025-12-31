@@ -52,8 +52,8 @@ export function StructuredData({ city = 'Boise' }: { city?: string }) {
     "name": `Boise Demolition - ${city}`,
     "description": `Professional demolition services in ${city}, Idaho. Interior demolition, structural teardown, concrete removal, deck & shed demolition, garage removal, and complete debris hauling. Licensed and insured.`,
     "url": "https://boise-demolition.com",
-    "telephone": "+1-208-505-9352",
-    "email": "info@boise-demolition.com",
+    "telephone": "+1-208-943-5231",
+    "email": "info@topshelfpros.com",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": city,
