@@ -5,6 +5,42 @@ import { Camera, Upload, X, ChevronDown, ChevronUp, Loader2 } from 'lucide-react
 
 const ABANDONED_FORM_TIMEOUT = 5 * 60 * 1000
 
+// Compress image using Canvas API
+const compressImage = (file: File, maxWidth = 1200, quality = 0.75): Promise<File> => {
+  return new Promise((resolve) => {
+    const img = new Image()
+    img.onload = () => {
+      let { width, height } = img
+      if (width > maxWidth) {
+        height = (height * maxWidth) / width
+        width = maxWidth
+      }
+      const canvas = document.createElement('canvas')
+      canvas.width = width
+      canvas.height = height
+      const ctx = canvas.getContext('2d')
+      ctx?.drawImage(img, 0, 0, width, height)
+      canvas.toBlob(
+        (blob) => {
+          if (blob) {
+            const compressedFile = new File([blob], file.name, {
+              type: 'image/jpeg',
+              lastModified: Date.now(),
+            })
+            resolve(compressedFile)
+          } else {
+            resolve(file)
+          }
+        },
+        'image/jpeg',
+        quality
+      )
+    }
+    img.onerror = () => resolve(file)
+    img.src = URL.createObjectURL(file)
+  })
+}
+
 export function QuickQuoteBar() {
   const [isExpanded, setIsExpanded] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -58,7 +94,7 @@ export function QuickQuoteBar() {
     }
   }
 
-  const handlePhotoChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handlePhotoChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = Array.from(e.target.files || [])
 
     if (files.length === 0) return
@@ -68,7 +104,12 @@ export function QuickQuoteBar() {
       return
     }
 
-    const newPhotos = [...photos, ...files].slice(0, 10)
+    // Compress all new images
+    const compressedFiles = await Promise.all(
+      files.map(file => compressImage(file))
+    )
+
+    const newPhotos = [...photos, ...compressedFiles].slice(0, 10)
     setPhotos(newPhotos)
 
     const newPreviews = newPhotos.map(file => URL.createObjectURL(file))
