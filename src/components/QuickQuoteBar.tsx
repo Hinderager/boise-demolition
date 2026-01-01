@@ -104,10 +104,17 @@ export function QuickQuoteBar() {
       return
     }
 
-    // Compress all new images
-    const compressedFiles = await Promise.all(
-      files.map(file => compressImage(file))
-    )
+    // Compress images sequentially to avoid memory issues on mobile
+    const compressedFiles: File[] = []
+    for (const file of files) {
+      try {
+        const compressed = await compressImage(file)
+        compressedFiles.push(compressed)
+      } catch {
+        // If compression fails, use original file
+        compressedFiles.push(file)
+      }
+    }
 
     const newPhotos = [...photos, ...compressedFiles].slice(0, 10)
     setPhotos(newPhotos)
