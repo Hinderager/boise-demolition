@@ -1,10 +1,26 @@
 import type { Metadata } from 'next'
+import { Montserrat, Oswald } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
 import { QuoteFormProvider } from '@/context/QuoteFormContext'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { StructuredData } from '@/components/StructuredData'
+
+
+const oswald = Oswald({
+  subsets: ['latin'],
+  variable: '--font-oswald',
+  weight: ['400', '600', '700'],
+  display: 'swap',
+})
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-montserrat',
+  weight: ['400', '600', '700'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://boise-demolition.com'),
@@ -73,7 +89,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${oswald.variable} ${montserrat.variable}`}>
       <head>
         <link rel="icon" href="/favicon.png" type="image/png" sizes="48x48" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
