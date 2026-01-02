@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { Phone, ArrowRight, MapPin } from 'lucide-react'
+import { QuickQuoteBar } from '@/components/QuickQuoteBar'
 
 export const metadata: Metadata = {
   title: 'Demolition Services Garden City, ID | Boise Demolition Pros',
@@ -39,6 +40,7 @@ export default function GardenCityDemolitionPage() {
           </div>
         </div>
       </section>
+      <QuickQuoteBar />
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">

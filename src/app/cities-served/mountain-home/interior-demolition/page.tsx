@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import { Phone, CheckCircle, Clock, Shield, MapPin } from 'lucide-react'
+import { QuickQuoteBar } from '@/components/QuickQuoteBar'
 
 export const metadata: Metadata = {
   title: 'Interior Demolition Mountain Home, ID | Boise Demolition Pros',
@@ -27,6 +28,7 @@ export default function MountainHomeInteriorDemolitionPage() {
           </div>
         </div>
       </section>
+      <QuickQuoteBar />
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
