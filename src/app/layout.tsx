@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://boise-demolition.com',
-    siteName: 'Boise Demolition',
+    siteName: 'Top Shelf Demolition',
     title: 'Boise Demolition Services | Interior, Structural & Concrete Demolition',
     description: 'Professional demolition services in Boise. Interior demolition, structural teardown, concrete removal, deck & shed demolition, and complete debris hauling.',
     images: [

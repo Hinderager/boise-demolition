@@ -49,7 +49,7 @@ export function StructuredData({ city = 'Boise' }: { city?: string }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": `Boise Demolition - ${city}`,
+    "name": `Top Shelf Demolition - ${city}`,
     "description": `Professional demolition services in ${city}, Idaho. Interior demolition, structural teardown, concrete removal, deck & shed demolition, garage removal, and complete debris hauling. Licensed and insured.`,
     "url": "https://boise-demolition.com",
     "telephone": "+1-208-943-5231",
@@ -105,7 +105,7 @@ export function StructuredData({ city = 'Boise' }: { city?: string }) {
     "serviceType": "Demolition Services",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Boise Demolition"
+      "name": "Top Shelf Demolition"
     },
     "areaServed": {
       "@type": "State",
