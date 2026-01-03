@@ -6,6 +6,7 @@ import { QuoteFormProvider } from '@/context/QuoteFormContext'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { StructuredData } from '@/components/StructuredData'
+import { BreadcrumbSchema } from '@/components/BreadcrumbSchema'
 
 
 const oswald = Oswald({
@@ -25,7 +26,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   metadataBase: new URL('https://boise-demolition.com'),
   title: {
-    default: 'Boise Demolition Services | Interior, Structural & Concrete Demolition',
+    default: 'Boise Demolition Services | Licensed & Insured | Top Shelf',
     template: '%s | Boise Demolition',
   },
   description: 'Professional demolition services in Boise. Interior demolition, structural teardown, concrete removal, deck & shed demolition, garage removal, and complete debris hauling. Licensed and insured.',
@@ -94,6 +95,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="icon" href="/favicon.png" type="image/png" sizes="48x48" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
         <StructuredData />
+        <BreadcrumbSchema siteName="Top Shelf Demolition" siteUrl="https://boise-demolition.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="dns-prefetch" href="https://connect.facebook.net" />
