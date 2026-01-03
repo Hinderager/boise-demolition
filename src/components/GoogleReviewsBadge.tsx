@@ -6,7 +6,7 @@ export function GoogleReviewsBadge() {
   return (
     <div className="absolute -top-8 md:-top-12 lg:-bottom-10 md:lg:-bottom-12 lg:top-auto left-1/2 transform -translate-x-1/2">
       {/* Mobile: Compact badge */}
-      <div className="md:hidden bg-white rounded-xl px-3 py-2 shadow-lg inline-block">
+      <div className="md:hidden bg-white rounded-xl min-h-[52px] px-3 py-2 shadow-lg inline-block">
         <div className="flex items-center justify-center gap-2">
           {/* Google Logo - Smaller */}
           <div className="flex-shrink-0">
@@ -33,7 +33,7 @@ export function GoogleReviewsBadge() {
       </div>
 
       {/* Desktop/Tablet: Full badge */}
-      <div className="hidden md:block bg-white rounded-2xl px-4 py-3 shadow-lg">
+      <div className="hidden md:block bg-white rounded-2xl min-h-[100px] px-4 py-3 shadow-lg">
         <div className="flex items-center justify-center gap-3">
           {/* Google Logo */}
           <div className="flex-shrink-0 bg-white rounded-full shadow-md p-1">

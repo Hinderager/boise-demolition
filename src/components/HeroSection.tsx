@@ -19,8 +19,9 @@ export function HeroSection({ city, headline, subheadline }: HeroSectionProps = 
       <Image
         src="/generated/hero.webp"
         alt={city ? `Professional Demolition Services - ${city} Idaho` : "Professional Demolition Services - Boise Idaho"}
-        fill
-        priority
+        fill priority
+        placeholder="blur"
+        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgIBAwQDAAAAAAAAAAAAAQIDBAAFESEGEjFBUWFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADERIh/9oADAMBAAIRAxEAPwDIqNGG7qKxNqCSdWIleSKWMLHGGJLD2Rx/cYyCQASTgYyFSpIopJ//2Q=="
         quality={85}
         sizes="100vw"
         className="object-cover object-center md:object-top lg:object-left"

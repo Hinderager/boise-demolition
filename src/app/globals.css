@@ -9,3 +9,36 @@ html {
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
+
+/* Critical rendering optimizations */
+@layer base {
+  /* Reduce layout shift with font-display optimization */
+  * {
+    font-display: optional;
+  }
+
+  /* Hardware acceleration for smoother animations */
+  .will-change-transform {
+    will-change: transform;
+  }
+
+  /* Reduce paint operations */
+  img, video {
+    content-visibility: auto;
+  }
+}
+
+/* Optimize images for CLS */
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Prefers reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
