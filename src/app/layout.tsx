@@ -91,9 +91,6 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${oswald.variable} ${montserrat.variable}`}>
-      <head>
-        <link rel="icon" href="/favicon.png" type="image/png" sizes="48x48" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
         <StructuredData />
         <BreadcrumbSchema siteName="Top Shelf Demolition" siteUrl="https://boise-demolition.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
@@ -103,7 +100,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://connect.facebook.net" />
         <link rel="dns-prefetch" href="https://connect.facebook.net" />
         <link rel="dns-prefetch" href="https://www.google.com" />
-      </head>
       <body className="min-h-screen bg-white antialiased">
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-581QKP6ZE5"
