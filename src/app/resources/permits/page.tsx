@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import { VisibleBreadcrumb } from '@/components/VisibleBreadcrumb'
 import { Phone, FileText, AlertCircle, CheckCircle, Building2 } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -16,6 +17,7 @@ export default function PermitsPage() {
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">What you need to know about permits in the Treasure Valley.</p>
         </div>
       </section>
+      <VisibleBreadcrumb />
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">

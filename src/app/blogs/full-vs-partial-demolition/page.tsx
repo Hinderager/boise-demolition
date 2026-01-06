@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import { VisibleBreadcrumb } from '@/components/VisibleBreadcrumb'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Building2, CheckCircle } from 'lucide-react'

@@ -41,7 +41,7 @@ export function VisibleBreadcrumb() {
   if (pathname === '/') return null
 
   return (
-    <div className="bg-gray-50 border-b border-gray-200 pt-20">
+    <div className="bg-gray-50 border-b border-gray-200">
       <div className="container mx-auto px-4 py-3">
         <nav className="text-sm" aria-label="Breadcrumb">
           <ol className="flex flex-wrap items-center gap-1">
@@ -49,7 +49,7 @@ export function VisibleBreadcrumb() {
               <li key={item.href} className="flex items-center">
                 {index > 0 && <span className="mx-2 text-gray-400">/</span>}
                 {index === breadcrumbs.length - 1 ? (
-                  <span className="text-dark-blue font-medium">{item.name}</span>
+                  <span className="text-rose-600 font-medium underline decoration-rose-600">{item.name}</span>
                 ) : (
                   <Link
                     href={item.href}

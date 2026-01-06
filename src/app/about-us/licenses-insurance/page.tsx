@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import { VisibleBreadcrumb } from '@/components/VisibleBreadcrumb'
 import { Phone, Shield, FileCheck, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -16,6 +17,7 @@ export default function LicensesInsurancePage() {
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">Fully credentialed and covered for your protection.</p>
         </div>
       </section>
+      <VisibleBreadcrumb />
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">

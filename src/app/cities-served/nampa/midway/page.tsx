@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Phone, CheckCircle, MapPin, ArrowRight } from 'lucide-react'
 import { QuickQuoteBar } from '@/components/QuickQuoteBar'
+import { VisibleBreadcrumb } from '@/components/VisibleBreadcrumb'
 
 export const metadata: Metadata = {
   title: 'Demolition Midway Nampa | Top Shelf',

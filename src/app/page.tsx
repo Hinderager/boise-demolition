@@ -1,5 +1,6 @@
 import { HeroSection } from '@/components/HeroSection'
 import { QuickQuoteBar } from '@/components/QuickQuoteBar'
+import { VisibleBreadcrumb } from '@/components/VisibleBreadcrumb'
 import { SectionDivider } from '@/components/SectionDivider'
 import { ServicesGrid } from '@/components/ServicesGrid'
 import { ServicesShowcase } from '@/components/ServicesShowcase'

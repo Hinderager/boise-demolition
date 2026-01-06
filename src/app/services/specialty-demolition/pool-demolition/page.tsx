@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import { Phone, CheckCircle, Clock, Shield, DollarSign } from 'lucide-react'
 import { QuickQuoteBar } from '@/components/QuickQuoteBar'
+import { VisibleBreadcrumb } from '@/components/VisibleBreadcrumb'
 
 export const metadata: Metadata = {
   title: 'Pool Demolition & Removal Boise & Treasure Valley | Boise Demolition Pros',
@@ -22,6 +23,7 @@ export default function PoolDemolitionRemovalPage() {
           </a>
         </div>
       </section>
+      <VisibleBreadcrumb />
       <QuickQuoteBar />
 
       <section className="py-16 bg-white">
