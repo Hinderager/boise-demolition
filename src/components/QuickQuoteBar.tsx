@@ -56,7 +56,8 @@ export function QuickQuoteBar() {
     name: '',
     phone: '',
     email: '',
-    message: ''
+    message: '',
+    website: ''
   })
   const [consentToContact, setConsentToContact] = useState(true)
   const [phoneError, setPhoneError] = useState('')
@@ -147,7 +148,8 @@ export function QuickQuoteBar() {
           firstName,
           lastName,
           phone,
-          source: 'ms-demolition',
+          source: 'microsite - demolition',
+          tags: ['microsite', 'demolition'],
           message,
           photoUrls
         })
@@ -159,6 +161,12 @@ export function QuickQuoteBar() {
 
   const handleInitialClick = async (e: React.FormEvent) => {
     e.preventDefault()
+
+    // Honeypot - bot detection
+    if (formData.website) {
+      setIsExpanded(true)
+      return
+    }
 
     if (!formData.name.trim()) {
       alert('Please enter your name')
@@ -218,6 +226,21 @@ export function QuickQuoteBar() {
     e.preventDefault()
     setIsSubmitting(true)
 
+    // Honeypot - bot detection
+    if (formData.website) {
+      setSubmitStatus('success')
+      setTimeout(() => {
+        setFormData({ name: '', phone: '', email: '', message: '', website: '' })
+        setPhotos([])
+        setPhotoPreviews([])
+        setIsExpanded(false)
+        setSubmitStatus('idle')
+        setSubmissionId(null)
+      }, 3000)
+      setIsSubmitting(false)
+      return
+    }
+
     formSubmittedRef.current = true
     if (abandonedTimerRef.current) {
       clearTimeout(abandonedTimerRef.current)
@@ -266,7 +289,7 @@ export function QuickQuoteBar() {
       setSubmitStatus('success')
 
       setTimeout(() => {
-        setFormData({ name: '', phone: '', email: '', message: '' })
+        setFormData({ name: '', phone: '', email: '', message: '', website: '' })
         setPhotos([])
         setPhotoPreviews([])
         setIsExpanded(false)
@@ -307,6 +330,20 @@ export function QuickQuoteBar() {
 
       <div className="max-w-xl mx-auto px-4">
         <form onSubmit={isExpanded ? handleSubmit : handleInitialClick}>
+          {/* Honeypot field - hidden from real users, catches bots */}
+          <div style={{ position: 'absolute', left: '-9999px', height: 0, overflow: 'hidden' }} aria-hidden="true">
+            <label htmlFor="website">Website</label>
+            <input
+              type="text"
+              id="website"
+              name="website"
+              value={formData.website}
+              onChange={handleInputChange}
+              tabIndex={-1}
+              autoComplete="off"
+            />
+          </div>
+
           <div className="flex flex-col sm:flex-row gap-3 mb-3">
             <input
               type="text"

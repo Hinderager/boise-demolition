@@ -17,6 +17,7 @@ export function SchedulingForm({ city = 'Boise' }: SchedulingFormProps) {
     preferredDate: '',
     description: '',
     agreeToTerms: false,
+    website: '',
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
@@ -66,6 +67,12 @@ export function SchedulingForm({ city = 'Boise' }: SchedulingFormProps) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (!isFormValid() || isSubmitting) return
+
+    // Honeypot - bot detection
+    if (formData.website) {
+      setSubmitted(true)
+      return
+    }
 
     setIsSubmitting(true)
     setError(null)
@@ -158,6 +165,20 @@ export function SchedulingForm({ city = 'Boise' }: SchedulingFormProps) {
             )}
 
             <div className="space-y-5">
+              {/* Honeypot field - hidden from real users, catches bots */}
+              <div style={{ position: 'absolute', left: '-9999px', height: 0, overflow: 'hidden' }} aria-hidden="true">
+                <label htmlFor="sf-website">Website</label>
+                <input
+                  type="text"
+                  id="sf-website"
+                  name="website"
+                  value={formData.website}
+                  onChange={handleChange}
+                  tabIndex={-1}
+                  autoComplete="off"
+                />
+              </div>
+
               {/* Full Name */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">

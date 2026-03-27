@@ -18,6 +18,17 @@ export async function POST(request: NextRequest) {
     const formType = formData.get('form_type') as string || 'microsite_form'
     const sourcePage = formData.get('source_page') as string || ''
 
+    // Honeypot check - if filled, a bot submitted the form
+    const honeypot = formData.get('website') as string
+    if (honeypot) {
+      // Return fake success to not alert the bot
+      return NextResponse.json({
+        success: true,
+        message: 'Form submitted successfully',
+        id: 'hp-' + Date.now(),
+      })
+    }
+
     // Handle photo uploads
     const photoUrls: string[] = []
 
