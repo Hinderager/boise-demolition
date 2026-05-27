@@ -57,7 +57,7 @@ export default function LicensesInsurancePage() {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                    <span className="text-gray-600">General Liability Insurance ($2M coverage)</span>
+                    <span className="text-gray-600">General Liability Insurance</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />

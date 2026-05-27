@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button'
 export const faqs = [
   {
     question: 'How much does demolition cost in Boise?',
-    answer: 'It depends on what you are tearing down. A small shed or deck might run $500-$2,000. Interior demo like a kitchen or bathroom is usually $1,500-$5,000. A full garage or small structure is typically $3,000-$8,000. Whole houses vary widely based on size and materials. We give free estimates after looking at your project.'
+    answer: 'It depends on what you are tearing down—size and type of structure, what it is made of (wood frame vs. concrete block), site access, materials and hazards (asbestos, lead paint, etc.), permit requirements, and disposal. We give free on-site estimates after looking at your project.'
   },
   {
     question: 'Do I need a permit to demolish something?',

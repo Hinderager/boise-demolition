@@ -65,15 +65,14 @@ export default function PricingPage() {
               </div>
             </div>
 
-            <h2 className="text-3xl font-bold text-dark-blue mb-6">Typical Price Ranges</h2>
+            <h2 className="text-3xl font-bold text-dark-blue mb-6">Project Sizes We Handle</h2>
             <div className="space-y-6 mb-12">
               <div className="border-l-4 border-[#FFC845] bg-gray-50 p-6">
                 <div className="flex items-start gap-4">
                   <Hammer className="w-8 h-8 text-[#FFC845] mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="text-xl font-bold text-dark-blue mb-2">Small Structures (Sheds, Small Decks)</h3>
-                    <p className="text-gray-600 mb-2">Typical range: $500 - $2,000</p>
-                    <p className="text-gray-600 text-sm">Small, accessible structures with straightforward disposal. Usually completed in a day.</p>
+                    <p className="text-gray-600 text-sm">Small, accessible structures with straightforward disposal. Usually completed in a day. The most budget-friendly end of demolition work.</p>
                   </div>
                 </div>
               </div>
@@ -83,8 +82,7 @@ export default function PricingPage() {
                   <Home className="w-8 h-8 text-[#FFC845] mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="text-xl font-bold text-dark-blue mb-2">Medium Structures (Garages, Large Decks, Pools)</h3>
-                    <p className="text-gray-600 mb-2">Typical range: $3,000 - $8,000</p>
-                    <p className="text-gray-600 text-sm">Larger outbuildings, attached garages, in-ground pools. May take 1-3 days depending on complexity.</p>
+                    <p className="text-gray-600 text-sm">Larger outbuildings, attached garages, in-ground pools. May take 1-3 days depending on complexity, materials, and site access.</p>
                   </div>
                 </div>
               </div>
@@ -94,8 +92,7 @@ export default function PricingPage() {
                   <Home className="w-8 h-8 text-[#FFC845] mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="text-xl font-bold text-dark-blue mb-2">Residential Houses</h3>
-                    <p className="text-gray-600 mb-2">Typical range: $8,000 - $25,000+</p>
-                    <p className="text-gray-600 text-sm">Full house demolition including foundation removal. Price varies widely based on size, construction type, and site conditions. Typically 3-7 days.</p>
+                    <p className="text-gray-600 text-sm">Full house demolition including foundation removal. Cost varies widely based on size, construction type, hazards, and site conditions. Typically 3-7 days.</p>
                   </div>
                 </div>
               </div>
@@ -105,8 +102,7 @@ export default function PricingPage() {
                   <Warehouse className="w-8 h-8 text-[#FFC845] mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="text-xl font-bold text-dark-blue mb-2">Commercial Buildings</h3>
-                    <p className="text-gray-600 mb-2">Varies significantly - custom quote required</p>
-                    <p className="text-gray-600 text-sm">Commercial demo depends on building size, construction type, environmental factors, and site logistics. Always requires detailed assessment.</p>
+                    <p className="text-gray-600 text-sm">Commercial demo depends on building size, construction type, environmental factors, and site logistics. Always requires detailed on-site assessment.</p>
                   </div>
                 </div>
               </div>

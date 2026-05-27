@@ -9,7 +9,7 @@ const features = [
   {
     icon: Shield,
     title: 'Licensed & Insured',
-    description: 'Fully licensed with $1M liability coverage. We handle hazardous materials, biohazards, and heavy debris the right way.',
+    description: 'Fully licensed and insured. We handle hazardous materials, biohazards, and heavy debris the right way.',
   },
   {
     icon: Clock,

@@ -47,7 +47,7 @@ export default function TermsPage() {
               <li>Payment is due upon completion of services unless otherwise agreed in writing</li>
               <li>For larger projects, we may require a deposit or progress payments</li>
               <li>We accept cash, check, and major credit cards (Visa, Mastercard, American Express, Discover)</li>
-              <li>Returned checks are subject to a $35 fee</li>
+              <li>Returned checks are subject to a fee</li>
               <li>Past due accounts may be subject to collection fees and interest</li>
             </ul>
 

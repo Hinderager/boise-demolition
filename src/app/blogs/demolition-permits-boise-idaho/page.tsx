@@ -175,7 +175,7 @@ export default function DemolitionPermitsBoiseIdaho() {
             <div className="space-y-3 mb-6">
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
-                <span className="text-blue-100"><strong>Permit fees:</strong> Typically $100-400 depending on the scope and structure size</span>
+                <span className="text-blue-100"><strong>Permit fees:</strong> Vary based on the scope and structure size</span>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
@@ -183,7 +183,7 @@ export default function DemolitionPermitsBoiseIdaho() {
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
-                <span className="text-blue-100"><strong>Asbestos inspection:</strong> $200-500 depending on building size and inspector</span>
+                <span className="text-blue-100"><strong>Asbestos inspection:</strong> Cost depends on building size and inspector</span>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />

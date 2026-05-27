@@ -201,11 +201,11 @@ export default function FullVsPartialDemolition() {
             </div>
 
             <p className="text-blue-100 leading-relaxed mb-4">
-              <strong>Full demolition</strong> often costs $5-15 per square foot for residential structures in the Boise area. A 1,500 sq ft house might run $7,500-22,500 depending on complexity.
+              <strong>Full demolition</strong> is usually priced per square foot for residential structures in the Boise area. The total depends heavily on the size of the home, construction type, foundation, and how complex the teardown is.
             </p>
 
             <p className="text-blue-100 leading-relaxed">
-              <strong>Partial demolition</strong> is harder to estimate by square foot because scope varies so much. Interior gut of a kitchen might be $2,000-5,000. Removing an addition might be $5,000-15,000. It depends entirely on what's involved.
+              <strong>Partial demolition</strong> is harder to estimate by square foot because scope varies so much. An interior gut of a kitchen is a different beast from removing an entire addition. It depends entirely on what's involved.
             </p>
           </div>
         </div>
