@@ -7,6 +7,7 @@ interface LeadRequest {
   lastName: string
   phone: string
   source: string
+  tags?: string[]
   message?: string
   photoUrls?: string[]
 }
@@ -38,6 +39,7 @@ export async function POST(request: NextRequest) {
         lastName: body.lastName || '',
         phone: digits,
         source: body.source || 'microsite',
+        tags: body.tags || [],
         message: body.message || '',
         photoUrls: body.photoUrls || []
       })
