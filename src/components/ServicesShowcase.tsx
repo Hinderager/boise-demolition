@@ -6,28 +6,28 @@ const services = [
     title: 'Residential Demolition',
     description: 'From complete house teardowns to partial structure removal, we handle residential demolition projects of all sizes. Our experienced crew works safely and efficiently, minimizing disruption to neighbors. All permits, utilities coordination, and debris removal handled for you.',
     image: '/generated/shed-demolition.webp',
-    link: 'tel:2083611982',
+    link: 'tel:2089435231',
     buttonText: 'Call Now',
   },
   {
     title: 'Shed & Garage Demolition',
     description: 'Old sheds, detached garages, carports, and outbuildings taken down and hauled away. We remove the structure, foundation if needed, and leave your property clean and ready for your next project. Fast, affordable, and hassle-free.',
     image: '/generated/deck-removal.webp',
-    link: 'tel:2083611982',
+    link: 'tel:2089435231',
     buttonText: 'Call Now',
   },
   {
     title: 'Interior Demolition',
     description: 'Gut renovations, kitchen and bathroom tearouts, flooring removal, and wall demolition. We carefully remove what needs to go while protecting what stays. Perfect for remodeling projects where you need a clean slate before construction begins.',
     image: '/generated/interior-demo.webp',
-    link: 'tel:2083611982',
+    link: 'tel:2089435231',
     buttonText: 'Call Now',
   },
   {
     title: 'Commercial Demolition',
     description: 'Office buildings, retail spaces, warehouses, and industrial facilities. We handle commercial demolition with the professionalism your project demands. Fully insured, permit assistance available, and complete debris removal included.',
     image: '/generated/fence-teardown.webp',
-    link: 'tel:2083611982',
+    link: 'tel:2089435231',
     buttonText: 'Call Now',
   },
 ]
@@ -96,9 +96,9 @@ export function ServicesShowcase() {
         {/* CTA Buttons */}
         <div className="flex flex-row gap-4 justify-center mt-16">
           <Button asChild size="lg" className="bg-ub-yellow hover:bg-ub-yellow/90 text-black font-bold text-lg px-10 py-6 rounded-lg uppercase border-4 border-ub-yellow">
-            <a href="tel:2083611982">
+            <a href="tel:2089435231">
               <span className="md:hidden">Call Now</span>
-              <span className="hidden md:inline">(208) 361-1982</span>
+              <span className="hidden md:inline">(208) 943-5231</span>
             </a>
           </Button>
         </div>

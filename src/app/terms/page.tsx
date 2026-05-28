@@ -107,7 +107,7 @@ export default function TermsPage() {
               If you have questions about these Terms of Service, please contact us:
             </p>
             <ul>
-              <li><strong>Phone:</strong> (208) 361-1982</li>
+              <li><strong>Phone:</strong> (208) 943-5231</li>
               <li><strong>Email:</strong> info@topshelfpros.com</li>
             </ul>
           </div>

@@ -46,8 +46,8 @@ export function MapSection() {
               </div>
               <div>
                 <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
-                <a href="tel:2083611982" className="text-[#0b7fb6] hover:text-[#10477d] font-semibold text-lg transition-colors">
-                  (208) 361-1982
+                <a href="tel:2089435231" className="text-[#0b7fb6] hover:text-[#10477d] font-semibold text-lg transition-colors">
+                  (208) 943-5231
                 </a>
               </div>
             </div>
@@ -110,9 +110,9 @@ export function MapSection() {
         {/* CTA Buttons */}
         <div className="flex flex-row gap-4 justify-center mt-12">
           <Button asChild size="lg" className="bg-ub-yellow hover:bg-ub-yellow/90 text-black font-bold text-lg px-10 py-6 rounded-lg uppercase border-4 border-ub-yellow">
-            <a href="tel:2083611982">
+            <a href="tel:2089435231">
               <span className="md:hidden">Call Now</span>
-              <span className="hidden md:inline">(208) 361-1982</span>
+              <span className="hidden md:inline">(208) 943-5231</span>
             </a>
           </Button>
         </div>

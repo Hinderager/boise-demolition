@@ -110,7 +110,7 @@ export function SchedulingForm({ city = 'Boise' }: SchedulingFormProps) {
       setSubmitted(true)
     } catch (err) {
       console.error('Form submission error:', err)
-      setError('There was an error submitting your request. Please call us at (208) 361-1982.')
+      setError('There was an error submitting your request. Please call us at (208) 943-5231.')
     } finally {
       setIsSubmitting(false)
     }
@@ -132,8 +132,8 @@ export function SchedulingForm({ city = 'Boise' }: SchedulingFormProps) {
             </p>
             <p className="text-gray-600">
               Need immediate assistance? Call us at{' '}
-              <a href="tel:2083611982" className="text-dark-blue font-bold underline hover:text-light-blue">
-                (208) 361-1982
+              <a href="tel:2089435231" className="text-dark-blue font-bold underline hover:text-light-blue">
+                (208) 943-5231
               </a>
             </p>
           </div>
@@ -211,7 +211,7 @@ export function SchedulingForm({ city = 'Boise' }: SchedulingFormProps) {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    placeholder="(208) 555-1234"
+                    placeholder="(208) 943-5231"
                     className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-light-blue focus:border-transparent outline-none transition-all"
                   />
                 </div>

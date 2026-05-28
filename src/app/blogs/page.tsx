@@ -113,10 +113,10 @@ export default function BlogsPage() {
             Contact us today for a free estimate on your demolition project.
           </p>
           <a
-            href="tel:2083611982"
+            href="tel:2089435231"
             className="inline-block bg-brand-yellow hover:bg-yellow-400 text-black font-bold text-lg px-8 py-4 rounded-lg transition-colors"
           >
-            Call (208) 361-1982
+            Call (208) 943-5231
           </a>
         </div>
       </section>
