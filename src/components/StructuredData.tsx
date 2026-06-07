@@ -23,11 +23,10 @@ export function StructuredData({ city = 'Boise' }: { city?: string }) {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": `Top Shelf Demolition - ${city}`,
+    "name": "Boise Demolition",
     "description": `Professional demolition services in ${city}, Idaho. Interior demolition, structural teardown, concrete removal, deck & shed demolition, garage removal, and complete debris hauling. Licensed and insured.`,
     "url": "https://boise-demolition.com",
     "telephone": "+1-208-943-5231",
-    "email": "info@topshelfpros.com",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": city,
@@ -78,7 +77,7 @@ export function StructuredData({ city = 'Boise' }: { city?: string }) {
     "serviceType": "Demolition Services",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Top Shelf Demolition"
+      "name": "Boise Demolition"
     },
     "areaServed": {
       "@type": "State",

@@ -6,7 +6,7 @@ import { QuickQuoteBar } from '@/components/QuickQuoteBar'
 import { VisibleBreadcrumb } from '@/components/VisibleBreadcrumb'
 
 export const metadata: Metadata = {
-  title: 'Demolition Midway Nampa | Top Shelf',
+  title: 'Demolition Midway Nampa | Boise Demolition',
   description: 'Demolition services in Midway, Nampa, Idaho. Local team, fair prices, same-day service available. Call (208) 943-5231.',
   keywords: ['demolition Midway', 'demolition Midway Nampa', 'Midway nampa demolition'],
   alternates: {

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Clock } from 'lucide-react'
+import { Facebook, Instagram, Linkedin, MapPin, Phone, Clock } from 'lucide-react'
 
 export function Footer() {
   return (
@@ -94,17 +94,6 @@ export function Footer() {
                   >
                     <span className="md:hidden">Call Now</span>
                     <span className="hidden md:inline">(208) 943-5231</span>
-                  </a>
-                </div>
-              </li>
-              <li className="flex items-start gap-3">
-                <Mail className="h-5 w-5 text-[#ff6b35] flex-shrink-0 mt-1" />
-                <div>
-                  <a
-                    href="mailto:info@topshelfpros.com"
-                    className="text-white/80 hover:text-white transition-colors"
-                  >
-                    info@topshelfpros.com
                   </a>
                 </div>
               </li>

@@ -109,7 +109,6 @@ export default function PrivacyPage() {
             </p>
             <ul>
               <li><strong>Phone:</strong> (208) 943-5231</li>
-              <li><strong>Email:</strong> info@topshelfpros.com</li>
             </ul>
           </div>
 

@@ -6,7 +6,7 @@ import { QuickQuoteBar } from '@/components/QuickQuoteBar'
 import { VisibleBreadcrumb } from '@/components/VisibleBreadcrumb'
 
 export const metadata: Metadata = {
-  title: 'Demolition Tuscany Meridian | Top Shelf',
+  title: 'Demolition Tuscany Meridian | Boise Demolition',
   description: 'Demolition services in Tuscany, Meridian, Idaho. Local team, fair prices, same-day service available. Call (208) 943-5231.',
   keywords: ['demolition Tuscany', 'demolition Tuscany Meridian', 'Tuscany meridian demolition'],
   alternates: {

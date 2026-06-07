@@ -6,7 +6,7 @@ import { QuickQuoteBar } from '@/components/QuickQuoteBar'
 import { VisibleBreadcrumb } from '@/components/VisibleBreadcrumb'
 
 export const metadata: Metadata = {
-  title: 'Demolition Harris Ranch Boise | Top Shelf',
+  title: 'Demolition Harris Ranch Boise | Boise Demolition',
   description: 'Demolition services in Harris Ranch, Boise, Idaho. Local team, fair prices, same-day service available. Call (208) 943-5231.',
   keywords: ['demolition Harris Ranch', 'demolition Harris Ranch Boise', 'Harris Ranch boise demolition'],
   alternates: {

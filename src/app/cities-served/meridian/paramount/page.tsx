@@ -6,7 +6,7 @@ import { QuickQuoteBar } from '@/components/QuickQuoteBar'
 import { VisibleBreadcrumb } from '@/components/VisibleBreadcrumb'
 
 export const metadata: Metadata = {
-  title: 'Demolition Paramount Meridian | Top Shelf',
+  title: 'Demolition Paramount Meridian | Boise Demolition',
   description: 'Demolition services in Paramount, Meridian, Idaho. Local team, fair prices, same-day service available. Call (208) 943-5231.',
   keywords: ['demolition Paramount', 'demolition Paramount Meridian', 'Paramount meridian demolition'],
   alternates: {

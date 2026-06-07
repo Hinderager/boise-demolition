@@ -26,7 +26,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   metadataBase: new URL('https://boise-demolition.com'),
   title: {
-    default: 'Boise Demolition Services | Licensed & Insured | Top Shelf',
+    default: 'Boise Demolition Services | Licensed & Insured | Boise Demolition',
     template: '%s | Boise Demolition',
   },
   description: 'Professional demolition services in Boise. Interior demolition, structural teardown, concrete removal, deck & shed demolition, garage removal, and complete debris hauling. Licensed and insured.',
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://boise-demolition.com',
-    siteName: 'Top Shelf Demolition',
+    siteName: 'Boise Demolition',
     title: 'Boise Demolition Services | Interior, Structural & Concrete Demolition',
     description: 'Professional demolition services in Boise. Interior demolition, structural teardown, concrete removal, deck & shed demolition, and complete debris hauling.',
     images: [
@@ -92,7 +92,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${oswald.variable} ${montserrat.variable}`}>
         <StructuredData />
-        <BreadcrumbSchema siteName="Top Shelf Demolition" siteUrl="https://boise-demolition.com" />
+        <BreadcrumbSchema siteName="Boise Demolition" siteUrl="https://boise-demolition.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />

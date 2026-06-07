@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import { MapPin, Phone, Mail, Clock } from 'lucide-react'
+import { MapPin, Phone, Clock } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 export function MapSection() {
@@ -48,18 +48,6 @@ export function MapSection() {
                 <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
                 <a href="tel:2089435231" className="text-[#0b7fb6] hover:text-[#10477d] font-semibold text-lg transition-colors">
                   (208) 943-5231
-                </a>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-[#0b7fb6] to-[#10477d] rounded-full flex items-center justify-center flex-shrink-0">
-                <Mail className="w-6 h-6 text-white" />
-              </div>
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                <a href="mailto:info@topshelfpros.com" className="text-[#0b7fb6] hover:text-[#10477d] transition-colors">
-                  info@topshelfpros.com
                 </a>
               </div>
             </div>

@@ -108,7 +108,6 @@ export default function TermsPage() {
             </p>
             <ul>
               <li><strong>Phone:</strong> (208) 943-5231</li>
-              <li><strong>Email:</strong> info@topshelfpros.com</li>
             </ul>
           </div>
 
