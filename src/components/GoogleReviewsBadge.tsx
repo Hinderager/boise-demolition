@@ -27,7 +27,7 @@ export function GoogleReviewsBadge() {
                 ))}
               </div>
             </div>
-            <div className="text-xs font-semibold text-gray-700">323+ Reviews</div>
+            <div className="text-xs font-semibold text-gray-700">392+ Reviews</div>
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@ export function GoogleReviewsBadge() {
               </div>
             </div>
             <div className="text-sm text-gray-900">
-              <span className="font-bold text-base">323+ Reviews</span>
+              <span className="font-bold text-base">392+ Reviews</span>
             </div>
           </div>
         </div>
