@@ -4,6 +4,10 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { MapPin, User, Phone, Mail, MessageSquare, Calendar, CheckCircle } from 'lucide-react'
 
+const FORM_TYPE = 'demolition_microsite'
+const GHL_SOURCE = 'microsite - demolition'
+const GHL_TAGS = ['microsite', 'demolition']
+
 type SchedulingFormProps = {
   city?: string
 }
@@ -78,33 +82,55 @@ export function SchedulingForm({ city = 'Boise' }: SchedulingFormProps) {
     setError(null)
 
     try {
-      // Submit to GHL webhook for junk removal calendar
-      const webhookUrl = process.env.NEXT_PUBLIC_GHL_WEBHOOK_URL || 'https://services.leadconnectorhq.com/hooks/YOUR_GHL_WEBHOOK_ID'
-      const response = await fetch(webhookUrl, {
+      const [firstName, ...restOfName] = formData.fullName.trim().split(' ')
+      const lastName = restOfName.join(' ')
+      const normalizedPhone = formData.phone.replace(/\D/g, '')
+
+      const details = [
+        formData.address && `Address: ${formData.address}`,
+        formData.preferredDate && `Preferred date: ${formData.preferredDate}`,
+        formData.description,
+      ]
+        .filter(Boolean)
+        .join('\n')
+
+      const submitData = new FormData()
+      submitData.append('first_name', firstName)
+      submitData.append('last_name', lastName)
+      submitData.append('phone', normalizedPhone)
+      submitData.append('email', formData.email)
+      submitData.append('message', details)
+      submitData.append('form_type', FORM_TYPE)
+      submitData.append('source_page', window.location.pathname)
+
+      const response = await fetch('/api/form-submission', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          contact: {
-            firstName: formData.fullName.split(' ')[0],
-            lastName: formData.fullName.split(' ').slice(1).join(' ') || '',
-            phone: formData.phone,
-            email: formData.email || undefined,
-            address1: formData.address,
-          },
-          customField: {
-            preferred_date: formData.preferredDate,
-            description: formData.description,
-            service_type: 'hoarding_cleanup',
-            source_city: city,
-            source_site: 'boise-hoarding-cleanup.com',
-          },
-        }),
+        body: submitData,
       })
 
-      if (!response.ok) {
-        throw new Error('Failed to submit form')
+      const result = await response.json()
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.error || 'Failed to submit form')
+      }
+
+      // Hand off to GHL via n8n. The submission is already saved at this point,
+      // so a hiccup here shouldn't show the customer an error.
+      try {
+        await fetch('/api/ghl/abandoned-lead', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            firstName,
+            lastName,
+            phone: normalizedPhone,
+            source: GHL_SOURCE,
+            tags: [...GHL_TAGS, city],
+            message: details,
+          }),
+        })
+      } catch (ghlErr) {
+        console.error('Error sending lead to GHL:', ghlErr)
       }
 
       setSubmitted(true)
