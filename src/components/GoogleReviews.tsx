@@ -18,7 +18,7 @@ export function GoogleReviews() {
   const [expandedReviews, setExpandedReviews] = useState(false)
   const reviewsPerPage = 4
   const rating = 5.0
-  const totalReviews = 323
+  const totalReviews = 392
 
   const nextSlide = () => {
     setCurrentIndex((prev) =>
