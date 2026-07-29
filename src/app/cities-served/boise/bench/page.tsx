@@ -6,7 +6,7 @@ import { QuickQuoteBar } from '@/components/QuickQuoteBar'
 import { VisibleBreadcrumb } from '@/components/VisibleBreadcrumb'
 
 export const metadata: Metadata = {
-  title: 'Demolition The Bench Boise | Boise Demolition',
+  title: 'Demolition The Bench Boise',
   description: 'Demolition services in The Bench, Boise, Idaho. Local team, fair prices, same-day service available. Call (208) 943-5231.',
   keywords: ['demolition The Bench', 'demolition The Bench Boise', 'The Bench boise demolition'],
   alternates: {

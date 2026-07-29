@@ -6,7 +6,7 @@ import { QuickQuoteBar } from '@/components/QuickQuoteBar'
 import { VisibleBreadcrumb } from '@/components/VisibleBreadcrumb'
 
 export const metadata: Metadata = {
-  title: 'Demolition Ten Mile Area Meridian | Boise Demolition',
+  title: 'Demolition Ten Mile Area Meridian',
   description: 'Demolition services in Ten Mile Area, Meridian, Idaho. Local team, fair prices, same-day service available. Call (208) 943-5231.',
   keywords: ['demolition Ten Mile Area', 'demolition Ten Mile Area Meridian', 'Ten Mile Area meridian demolition'],
   alternates: {

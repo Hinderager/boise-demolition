@@ -5,7 +5,7 @@ import { QuickQuoteBar } from '@/components/QuickQuoteBar'
 import { VisibleBreadcrumb } from '@/components/VisibleBreadcrumb'
 
 export const metadata: Metadata = {
-  title: 'Demolition Services | Boise Demolition',
+  title: 'Demolition Services',
   description: 'Complete demolition services in Boise and the Treasure Valley. Residential, commercial, interior, and specialty demolition. Call (208) 943-5231.',
   alternates: { canonical: 'https://boise-demolition.com/services' },
 }

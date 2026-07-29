@@ -6,7 +6,7 @@ import { QuickQuoteBar } from '@/components/QuickQuoteBar'
 import { VisibleBreadcrumb } from '@/components/VisibleBreadcrumb'
 
 export const metadata: Metadata = {
-  title: 'Demolition Lochsa Falls Meridian | Boise Demolition',
+  title: 'Demolition Lochsa Falls Meridian',
   description: 'Demolition services in Lochsa Falls, Meridian, Idaho. Local team, fair prices, same-day service available. Call (208) 943-5231.',
   keywords: ['demolition Lochsa Falls', 'demolition Lochsa Falls Meridian', 'Lochsa Falls meridian demolition'],
   alternates: {

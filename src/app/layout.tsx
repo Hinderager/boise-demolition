@@ -26,7 +26,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   metadataBase: new URL('https://boise-demolition.com'),
   title: {
-    default: 'Boise Demolition Services | Licensed & Insured | Boise Demolition',
+    default: 'Boise Demolition Services | Licensed & Insured',
     template: '%s | Boise Demolition',
   },
   description: 'Professional demolition services in Boise. Interior demolition, structural teardown, concrete removal, deck & shed demolition, garage removal, and complete debris hauling. Licensed and insured.',
