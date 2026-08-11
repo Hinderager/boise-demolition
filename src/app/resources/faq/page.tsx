@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import { VisibleBreadcrumb } from '@/components/VisibleBreadcrumb'
 import { Phone, ChevronDown } from 'lucide-react'
+import { FaqSchema } from '@/components/FaqSchema'
 
 export const metadata: Metadata = {
   title: 'Frequently Asked Questions | Boise Demolition Pros',
@@ -62,6 +63,7 @@ export default function FAQPage() {
 
   return (
     <main className="pt-20">
+      <FaqSchema faqs={faqs} />
       <section className="py-16 bg-gradient-to-b from-dark-blue to-[#1a5a9e]">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Frequently Asked Questions</h1>

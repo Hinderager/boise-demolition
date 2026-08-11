@@ -58,8 +58,7 @@ export function MapSection() {
               </div>
               <div>
                 <h4 className="font-semibold text-gray-900 mb-1">Hours</h4>
-                <p className="text-gray-700">Monday - Saturday: 8:00 AM - 9:00 PM</p>
-                <p className="text-gray-700">Sunday: 12:00 PM - 9:00 PM</p>
+                <p className="text-gray-700">Monday - Sunday: 8:00 AM - 9:00 PM</p>
               </div>
             </div>
 

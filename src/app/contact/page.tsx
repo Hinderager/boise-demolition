@@ -36,9 +36,7 @@ export default function ContactPage() {
                   <Clock className="w-8 h-8 text-dark-blue flex-shrink-0" />
                   <div>
                     <h3 className="font-bold text-dark-blue">Hours</h3>
-                    <p className="text-gray-600">Mon-Fri: 7am - 6pm</p>
-                    <p className="text-gray-600">Sat: 8am - 4pm</p>
-                    <p className="text-gray-600">Sun: By appointment</p>
+                    <p className="text-gray-600">Monday - Sunday: 8:00 AM - 9:00 PM</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
